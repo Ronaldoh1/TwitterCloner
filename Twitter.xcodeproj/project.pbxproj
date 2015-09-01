@@ -13,6 +13,12 @@
 		F217C5011B958ABE00A30FD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F217C5001B958ABE00A30FD1 /* Images.xcassets */; };
 		F217C5041B958ABE00A30FD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217C5021B958ABE00A30FD1 /* LaunchScreen.xib */; };
 		F217C5101B958ABE00A30FD1 /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217C50F1B958ABE00A30FD1 /* TwitterTests.swift */; };
+		F217C51A1B958AE700A30FD1 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5191B958AE700A30FD1 /* Firebase.framework */; };
+		F217C51F1B958B6600A30FD1 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C51E1B958B6600A30FD1 /* libicucore.dylib */; };
+		F217C5211B958B7300A30FD1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5201B958B7300A30FD1 /* libc++.dylib */; };
+		F217C5231B958B7E00A30FD1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5221B958B7E00A30FD1 /* CFNetwork.framework */; };
+		F217C5251B958B8800A30FD1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5241B958B8800A30FD1 /* Security.framework */; };
+		F217C5271B958B9200A30FD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 		F217C5091B958ABE00A30FD1 /* TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F217C50E1B958ABE00A30FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F217C50F1B958ABE00A30FD1 /* TwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTests.swift; sourceTree = "<group>"; };
+		F217C5191B958AE700A30FD1 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
+		F217C51B1B958B1F00A30FD1 /* Twitter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F217C51E1B958B6600A30FD1 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F217C5201B958B7300A30FD1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		F217C5221B958B7E00A30FD1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F217C5241B958B8800A30FD1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F217C5271B958B9200A30FD1 /* SystemConfiguration.framework in Frameworks */,
+				F217C5251B958B8800A30FD1 /* Security.framework in Frameworks */,
+				F217C5231B958B7E00A30FD1 /* CFNetwork.framework in Frameworks */,
+				F217C5211B958B7300A30FD1 /* libc++.dylib in Frameworks */,
+				F217C51F1B958B6600A30FD1 /* libicucore.dylib in Frameworks */,
+				F217C51A1B958AE700A30FD1 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +78,15 @@
 		F217C4EB1B958ABE00A30FD1 = {
 			isa = PBXGroup;
 			children = (
+				F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */,
+				F217C5241B958B8800A30FD1 /* Security.framework */,
+				F217C5221B958B7E00A30FD1 /* CFNetwork.framework */,
+				F217C5201B958B7300A30FD1 /* libc++.dylib */,
+				F217C51E1B958B6600A30FD1 /* libicucore.dylib */,
 				F217C4F61B958ABE00A30FD1 /* Twitter */,
 				F217C50C1B958ABE00A30FD1 /* TwitterTests */,
 				F217C4F51B958ABE00A30FD1 /* Products */,
+				F217C51B1B958B1F00A30FD1 /* Twitter-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 				F217C5001B958ABE00A30FD1 /* Images.xcassets */,
 				F217C5021B958ABE00A30FD1 /* LaunchScreen.xib */,
 				F217C4F71B958ABE00A30FD1 /* Supporting Files */,
+				F217C5191B958AE700A30FD1 /* Firebase.framework */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -340,9 +366,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ronaldoh1/Downloads,
+				);
 				INFOPLIST_FILE = Twitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Twitter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +384,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ronaldoh1/Downloads,
+				);
 				INFOPLIST_FILE = Twitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Twitter-Bridging-Header.h";
 			};
 			name = Release;
 		};
