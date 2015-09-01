@@ -26,6 +26,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    override func viewDidAppear(animated: Bool) {
+        if ref.authData != nil {
+             self.performSegueWithIdentifier("loginAndSignupComplete" , sender: self)
+
+        }else{
+
+            println("You will have to sign in")
+        }
+    }
+
     @IBAction func signInButton(sender: AnyObject) {
 
         if emailText.text == "" || passwordText.text == "" {
@@ -42,7 +53,7 @@ class ViewController: UIViewController {
                     println("There is an error with the given informatin")
                 }else{
 
-
+                    self.performSegueWithIdentifier("loginAndSignupComplete" , sender: self)
 
                     println("login success")
                 }
@@ -93,6 +104,9 @@ class ViewController: UIViewController {
 
                             self.ref.childByAppendingPath("Users").childByAppendingPath(authData.uid).setValue(newUser)
                             self.ref.childByAppendingPath("Users/\(authData.uid)/post").setValue(fakePost)
+
+
+                            self.performSegueWithIdentifier("loginAndSignupComplete" , sender: self)
 
 
                          }

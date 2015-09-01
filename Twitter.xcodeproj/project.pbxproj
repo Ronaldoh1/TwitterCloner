@@ -19,6 +19,7 @@
 		F217C5231B958B7E00A30FD1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5221B958B7E00A30FD1 /* CFNetwork.framework */; };
 		F217C5251B958B8800A30FD1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5241B958B8800A30FD1 /* Security.framework */; };
 		F217C5271B958B9200A30FD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */; };
+		F29D4A7E1B95A4D300B17BEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F217C5221B958B7E00A30FD1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F217C5241B958B8800A30FD1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				F217C4F91B958ABE00A30FD1 /* AppDelegate.swift */,
 				F217C4FB1B958ABE00A30FD1 /* ViewController.swift */,
 				F217C4FD1B958ABE00A30FD1 /* Main.storyboard */,
+				F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */,
 				F217C5001B958ABE00A30FD1 /* Images.xcassets */,
 				F217C5021B958ABE00A30FD1 /* LaunchScreen.xib */,
 				F217C4F71B958ABE00A30FD1 /* Supporting Files */,
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29D4A7E1B95A4D300B17BEA /* MainViewController.swift in Sources */,
 				F217C4FC1B958ABE00A30FD1 /* ViewController.swift in Sources */,
 				F217C4FA1B958ABE00A30FD1 /* AppDelegate.swift in Sources */,
 			);
@@ -450,6 +454,7 @@
 				F217C5151B958ABE00A30FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F217C5161B958ABE00A30FD1 /* Build configuration list for PBXNativeTarget "TwitterTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +463,7 @@
 				F217C5181B958ABE00A30FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -53,17 +53,17 @@
                         <outlet property="emailText" destination="HAx-VS-clW" id="11E-hw-Ena"/>
                         <outlet property="passwordText" destination="0oI-sq-SF0" id="ezJ-0k-fQb"/>
                         <outlet property="passwordTextField" destination="0oI-sq-SF0" id="4m9-hA-8nZ"/>
-                        <segue destination="a5d-7J-D3T" kind="presentation" identifier="loginAndSignupComplete" id="wys-SQ-tkS"/>
+                        <segue destination="a5d-7J-D3T" kind="show" identifier="loginAndSignupComplete" id="wys-SQ-tkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727" y="419"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="QN2-yl-ghD">
             <objects>
-                <viewController id="a5d-7J-D3T" sceneMemberID="viewController">
+                <viewController id="a5d-7J-D3T" customClass="MainViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uRX-YT-jqh"/>
                         <viewControllerLayoutGuide type="bottom" id="nsU-72-ICe"/>
@@ -73,11 +73,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yfv-d3-piZ">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="vzB-Qb-tRe">
+                            <connections>
+                                <action selector="logout:" destination="a5d-7J-D3T" id="KRJ-el-HuE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="e9s-WL-GEh" kind="presentation" identifier="logoutSegue" id="Fdv-u2-3Ec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DdD-XW-WGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="437"/>
+            <point key="canvasLocation" x="1245" y="772"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r6D-ej-tbg">
