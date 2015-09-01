@@ -28,6 +28,28 @@ class ViewController: UIViewController {
 
     @IBAction func signInButton(sender: AnyObject) {
 
+        if emailText.text == "" || passwordText.text == "" {
+
+            println("Please make sure that you enter an email and a password")
+
+
+        }else{
+
+            ref.authUser(emailText.text, password: passwordText.text, withCompletionBlock: { (error, authData) -> Void in
+
+                if error != nil {
+                    println(error)
+                    println("There is an error with the given informatin")
+                }else{
+
+
+
+                    println("login success")
+                }
+            })
+
+        }
+
 
     }
 
@@ -47,7 +69,35 @@ class ViewController: UIViewController {
                     println(error)
                 }else{
 
+
                     println("Success sign up")
+
+                    self.ref.authUser(self.emailText.text, password: self.passwordText.text, withCompletionBlock: { (error, authData) -> Void in
+                        if error != nil {
+
+                            println( "there is an error with your given information")
+
+                        }else {
+                            var userId = authData.uid
+                            let newUser = ["provider": authData.provider,
+                                "email" : authData.providerData["email"] as? NSString as! String,
+                                "post": ""
+                            ]
+
+                            let fakePost = [
+                            "\(NSDate())": "This is my first post fake post"
+
+
+
+                            ]
+
+                            self.ref.childByAppendingPath("Users").childByAppendingPath(authData.uid).setValue(newUser)
+                            self.ref.childByAppendingPath("Users/\(authData.uid)/post").setValue(fakePost)
+
+
+                         }
+
+                    })
 
                 }
 
