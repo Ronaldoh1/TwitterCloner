@@ -20,6 +20,7 @@
 		F217C5251B958B8800A30FD1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5241B958B8800A30FD1 /* Security.framework */; };
 		F217C5271B958B9200A30FD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */; };
 		F29D4A7E1B95A4D300B17BEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */; };
+		F29D4A821B95B9D100B17BEA /* AddTweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D4A811B95B9D100B17BEA /* AddTweetTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F217C5241B958B8800A30FD1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F217C5261B958B9200A30FD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F29D4A811B95B9D100B17BEA /* AddTweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTweetTableViewController.swift; path = Twitter.xcodeproj/../AddTweetTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F217C4FB1B958ABE00A30FD1 /* ViewController.swift */,
 				F217C4FD1B958ABE00A30FD1 /* Main.storyboard */,
 				F29D4A7D1B95A4D300B17BEA /* MainViewController.swift */,
+				F29D4A811B95B9D100B17BEA /* AddTweetTableViewController.swift */,
 				F217C5001B958ABE00A30FD1 /* Images.xcassets */,
 				F217C5021B958ABE00A30FD1 /* LaunchScreen.xib */,
 				F217C4F71B958ABE00A30FD1 /* Supporting Files */,
@@ -244,6 +247,7 @@
 				F29D4A7E1B95A4D300B17BEA /* MainViewController.swift in Sources */,
 				F217C4FC1B958ABE00A30FD1 /* ViewController.swift in Sources */,
 				F217C4FA1B958ABE00A30FD1 /* AppDelegate.swift in Sources */,
+				F29D4A821B95B9D100B17BEA /* AddTweetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
