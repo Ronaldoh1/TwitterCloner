@@ -109,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTN-EB-8Tg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="732"/>
+            <point key="canvasLocation" x="1872" y="712"/>
         </scene>
         <!--New Tweet-->
         <scene sceneID="zua-jB-eTe">
@@ -153,13 +153,13 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="aQA-wl-7gW">
                             <connections>
                                 <action selector="onDoneButtonTapped:" destination="Sr8-A1-ZeP" id="70I-gN-zI1"/>
-                                <segue destination="TxD-wb-PJl" kind="presentation" identifier="finishAddingSegue" id="l7E-cQ-4od"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="messageText" destination="gRj-aN-e6f" id="7KX-fI-IxR"/>
+                        <segue destination="TxD-wb-PJl" kind="show" identifier="finishAddingSegue" id="G9e-In-RtU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ne0-Ue-YUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -206,6 +206,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l7E-cQ-4od"/>
+        <segue reference="G9e-In-RtU"/>
     </inferredMetricsTieBreakers>
 </document>

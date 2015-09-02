@@ -12,22 +12,35 @@ class MainViewController: UITableViewController {
 
     var ref = Firebase(url: "https://twittercloner.firebaseio.com/")
 
-    var post: [String] = ["hello", "hello", "3"]
+    var posts: [String: String] = [String: String]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        ref.observeEventType(.Value, withBlock: { (snapshot) -> Void in
+
+            println(snapshot.value.objectForKey("Post"))
+            self.posts = snapshot.value.objectForKey("Post") as! [String: String]
+            self.tableView.reloadData()
+        })
 
     }
 
      override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return post.count
+        return self.posts.count;
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
 
-        cell.textLabel!.text = self.post[indexPath.row]
+        var keys: Array = Array(self.posts.keys)
+
+
+
+
+        cell.textLabel!.text = posts[keys[indexPath.row]] as String!
 
         return cell
     }
